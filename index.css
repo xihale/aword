@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@font-face {
+    font-family: "Wen Yue";
+    src: url('fonts/WebYue.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6990F2;
+    min-height: 86vh;
+}
+#body{
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 6%;
+    border-radius: 7px;
+}
+#title{
+    color: #6990F2;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+}
+#main{
+    height: 400px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6990F2;
+    font-size: 30px;
+    font-family: "Wen Yue";
+    text-align: center;
+}
+footer{
+    text-align: center;
+    padding: 0%;
+    font-family: "Poppins";
+    color: #6990F2;
+}
