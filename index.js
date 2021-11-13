@@ -10,7 +10,7 @@ document.onkeydown=function(e){
     }
 };
 if(location.hash!=''){
-    document.querySelector('#main').innerHTML=decodeURI(location.hash.substring(1).replace(/\\n/g,"<br>"));
+    document.querySelector('#main').innerHTML=decodeURI(location.hash.substring(1).replace(/\n/g,"<br>"));
 }else{
     get();
 }
