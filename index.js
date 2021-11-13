@@ -1,5 +1,5 @@
 if(location.hash!=''){
-    document.querySelector('#main').innerHTML=location.hash.substring(1);
+    document.querySelector('#main').innerHTML=decodeURI(location.hash.substring(1));
 }else{
     var get=()=>fetch("https://v1.hitokoto.cn/?c=i").then(res=>res.json()).then(data=>{
         document.querySelector('#main').innerHTML=data.hitokoto;
