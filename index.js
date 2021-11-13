@@ -11,8 +11,8 @@ document.onkeydown=function(e){
 };
 if(location.hash!=''){
     var hash=()=>{document.querySelector('#main').innerHTML=decodeURI(location.hash.substring(1).replace(/\n/g,"<br>"))};
-    window.onhashchange=hash;
     hash();
+    window.onhashchange=hash;
 }else{
     get();
 }
