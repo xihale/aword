@@ -10,7 +10,8 @@ document.onkeydown=function(e){
     }
 };
 if(location.hash!=''){
-    document.querySelector('#main').innerHTML=decodeURI(location.hash.substring(1).replace(/\n/g,"<br>"));
+    var hash=()=>document.querySelector('#main').innerHTML=decodeURI(location.hash.substring(1).replace(/\n/g,"<br>"));
+    window.onhashchange=hash;
 }else{
     get();
 }
