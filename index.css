@@ -9,6 +9,9 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
 }
+*::selection{
+    background-color: #dcecff;
+}
 body{
     display: flex;
     align-items: center;
@@ -27,6 +30,10 @@ body{
     font-size: 34px;
     font-weight: 600;
     text-align: center;
+}
+#title span{
+    cursor: pointer;
+    user-select: none;
 }
 #main{
     height: 400px;
